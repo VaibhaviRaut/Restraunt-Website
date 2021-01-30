@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tikka Indian Cuisine</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/logo.ico">
+    
+    <!--./assets/css/-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/mediaQ.css">
+    <link rel="stylesheet" href="./assets/css/tab.css">
+
+    <!--external-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!--./assets/javascript/-->
+    <script src="./assets/javascript/parallax.min.js"></script>
+
+</head>
+<body>
+   <div class="container">
+       
+        <div class="nav-wrapper">
+            <div class="navbar">
+                <div class="hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Order</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#covid" class="nav-link">Our Values</a></li>
+                    <li class="nav-item"><a href="#info" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Members</a></li>
+                    <li class="nav-item"><a href="#" class=" nav-link join-community"> Join Our Community</a></li>
+                    <li class="nav-item"><a href="reference.html" class="nav-link">References</a></li>
+                </ul>
+            </div>
+
+            <header class="header">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#menu">Order</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#covid">Our Values</a></li>
+                    <li><a href="#info">Contact Us</a></li>
+                    <li><a href="#">Members</a></li>
+                    <li><a href="#" class="join-community"> Join Our Community</a></li>
+                    <li><a href="reference.html">References</a></li>
+                </ul>
+            </header>
+        </div><!--nav-wrapper-->
+
+        <div class="video-wrapper" id="top">
+            <h1>Tikka Indian Cuisine</h1>
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="./assets/media/promoCut.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div><!--video-wrapper-->
+        
+        <div class="content-wrapper">
+
+            <div class="banner">
+                <h2>Featuring Fresh Indian Cuisine</h2>
+                <p>
+                    Featuring Authentic Indian Cuisine in a modern, family run atmosphere with friendly service. 
+                    We also offer full service catering, and daily lunch specials. We look forward to having you as our guests.
+                    Tikka Indian Cuisine is where your senses come alive with the aroma of fresh Indian spices in the air. 
+                    Come enjoy and explore the flavors of our Indian food. You will delight in visual creations that entice the eyes and 
+                    enliven the palette. Our vision is to reflect the authentic dishes of India at Tikka Indian Cuisine, with ambiance, 
+                    service, and modern presentation. We welcome you to embark on a culinary journey as you enjoy the ultimate dining 
+                    experience and invite you to experience Tikka Indian Cuisine.
+                </p>
+            </div><!--banner-->
+
+            <br/>
+
+            <div class="dishes" id="menu">
+
+                <div class="parallaxd" data-parallax="scroll" data-image-src="./assets/images/dishes_Collage.png" data-z-index="1"> 
+                
+                    <h1 class="dishes-header">A Taste of Home</h1>
+                    <p class="info">
+                        <button id="menu-toggle">
+                            Menu
+                        </button>
+                    </p>
+                </div><!--parallax-effect-Menu-->
+                
+                <br/>
+                <div class="tabs-container" id="side-nav">
+                    <div class="tabs">
+                        <button class="tabHeader active-tab" data-tab="1">Appetizers</button>
+                        <button class="tabHeader" data-tab="2">Curry</button>
+                        <button class="tabHeader" data-tab="3">Indian Bread</button>
+                        <button class="tabHeader" data-tab="4">Clay Oven</button>
+                        <button class="tabHeader" data-tab="5">Rice Specialties</button>
+                        <button class="tabHeader" data-tab="6">Sides</button>
+                        <button class="tabHeader" data-tab="7">Drinks</button>
+                        <button class="tabHeader" data-tab="8">Desserts</button>
+                        <button class="tabHeader" data-tab="9">Full Menu</button>
+                    </div>
+
+                    <div id="tabsection-1" class="tabSection show-tab">
+                        <img class="menu-img" src="./assets/images/appetizer_Collage.jpg" alt="Appetizers">
+                        <p>Chicken Tikka Roll&nbsp;&nbsp;<i class="fas fa-drumstick-bite"></i><span class="menu-price">$10.00</span></p>
+                        <p>Masala Dosa&nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$10.00</span></p>
+                        <p>Idli Chatni & Sambar&nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$15.00</span></p>
+                        <p>Cheese Dosa&nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$11.00</span></p>
+                        <p>Veg. Samosa&nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$8.00</span></p>
+                        <p>Chilli Chicken&nbsp;&nbsp;<i class="fas fa-drumstick-bite"></i><span class="menu-price">$10.00</span></p>
+                        <p><a class="more-link" href="#">For more &nbsp;<i class="fas fa-caret-down"></i></a></p>
+                    </div>
+
+                    <div id="tabsection-2" class="tabSection hide-tab">
+                        <img class="menu-img" src="./assets/images/curry_Collage.jpg" alt="Curry">
+                        <p>Chicken Curry&nbsp;&nbsp;<i class="fas fa-drumstick-bite"></i><span class="menu-price">$14.00</span></p>
+                        <p>Veg Tikka Masala &nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$13.00</span></p>
+                        <p>Paneer Tikka Masala &nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$14.00</span></p>
+                        <p>Shrimp Tikka Masala &nbsp;&nbsp;<i class="fas fa-fish"></i><span class="menu-price">$16.00</span></p>
+                        <p>Chicken Tikka Masala &nbsp;&nbsp;<i class="fas fa-drumstick-bite"></i><span class="menu-price">$14.00</span></p>
+                        <p>Mushroom Masala &nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$12.00</span></p>
+                        <p>Shrimp Chettinad &nbsp;&nbsp;<i class="fas fa-fish"></i>&nbsp;&nbsp;<i class="fas fa-pepper-hot"></i><span class="menu-price">$16.00</span></p>
+                        <p><a class="more-link" href="#">For more &nbsp;<i class="fas fa-caret-down"></i></a></p>
+                    </div>
+                    <div id="tabsection-3" class="tabSection hide-tab">
+                        <img class="menu-img" src="./assets/images/bread_Collage.jpg" alt="Different Types of Bread">
+                        <p>Rosemary Naan&nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$4.00</span></p>
+                        <p>Tandoor Roti&nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$4.00</span></p>
+                        <p>Garlic Roti/Naan&nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$3.25</span></p>
+                        <p><a class="more-link" href="#">For more &nbsp;<i class="fas fa-caret-down"></i></a></p>
+                    </div>
+                    <div id="tabsection-4" class="tabSection hide-tab">
+                        <img class="menu-img" src="./assets/images/clay_Collage.jpg" alt="Different Clay Oven Dishes">
+                        <p>Tikka&nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$14.00</span></p>
+                        <p>Tandoori Platter&nbsp;&nbsp;<i class="fas fa-drumstick-bite"></i><span class="menu-price">$26.00</span></p>
+                        <p>Lemon Pepper Salmon Tikka &nbsp;&nbsp;<i class="fas fa-fish"></i><span class="menu-price">$17.00</span></p>
+                        <p>Lamb Chops&nbsp;&nbsp;<i class="fas fa-drumstick-bite"></i><span class="menu-price">$12.00</span></p>
+                        <p><a class="more-link" href="#">For more &nbsp;<i class="fas fa-caret-down"></i></a></p>
+                    </div>
+                    <div id="tabsection-5" class="tabSection hide-tab">
+                        <img class="menu-img" src="./assets/images/rice_Collage.jpg" alt="Different Types of Rice">
+                        <p>Briyani&nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$13.00</span></p>
+                        <p>Lemon Rice &nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$12.00</span></p>
+                        <p>Plain Basmati Rice &nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$12.00</span></p>
+                        <p><a class="more-link" href="#">For more &nbsp;<i class="fas fa-caret-down"></i></a></p>
+                    </div>
+
+                    <div id="tabsection-6" class="tabSection hide-tab">
+                        <img class="menu-img" src="./assets/images/sides_Collage.jpg" alt="Side Dishes">
+                        <p>Raita&nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$2.00</span></p>
+                        <p>Masala Papad&nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$5.00</span></p>
+                        <p>Mango Pickle&nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$5.00</span></p>
+                        <p>Mint Chutney&nbsp;&nbsp;<i class="fab fa-pagelines"></i><span class="menu-price">$5.00</span></p>
+                        <p><a class="more-link" href="#">For more &nbsp;<i class="fas fa-caret-down"></i></a></p>
+                    </div>
+                    <div id="tabsection-7" class="tabSection hide-tab">
+                        <img class="menu-img" src="./assets/images/drinks_Collage.jpg" alt="Drinks">
+                        <p><button>Cold Beverages&nbsp;&nbsp;<i class="fas fa-glass-martini"></i></button><span class="menu-price">$3.00/ $4.00</span></p>
+                        <p><button>Hot Beverages &nbsp;&nbsp;<i class="fas fa-mug-hot"></i></button><span class="menu-price">$3.00</span></p>
+                        <p><button>Wine&nbsp;&nbsp;<i class="fas fa-wine-bottle"></i></button><span class="menu-price">$20.00/ $105.00</span></p>
+                        <p><button>Beer&nbsp;&nbsp;<i class="fas fa-beer"></i></button><span class="menu-price">$3.00/ $8.00</span></p>
+                        <p><a class="more-link" href="#">For more &nbsp;<i class="fas fa-caret-down"></i></a></p>
+                    </div>
+
+                    <div id="tabsection-8" class="tabSection hide-tab">
+                        <img class="menu-img" src="./assets/images/desserts_Collage.jpg" alt="Desserts">
+                        <p>Rasgola<span class="menu-price">$7.00</span></p>
+                        <p>Gulab Jamun<span class="menu-price">$5.00</span></p>
+                        <p>Carrot Halwa<span class="menu-price">$6.00</span></p>
+                        <p>Kulfi<span class="menu-price">$5.00</span></p><br/>
+                        <p><a class="more-link" href="#scan-menu">For more &nbsp;<i class="fas fa-caret-down"></i></a></p>
+                    </div>
+
+                    <div id="tabsection-9" class="tabSection hide-tab">
+                        <img src="./assets/images/scan_logo.jpg" width="150" alt="Menu Scan logo">
+                        <p>
+                            Scan the QR Code to view the full Menu.
+                        </p>
+                    </div>
+                </div>
+            </div><!-- MENU -=- dishes-->
+        
+            <div class="review-list" id="rl">
+                <h2>Our satified customers say</h2>
+                <table class="actual-table" >
+                    <tr>
+                        <td class="review-item item1">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div><hr><br/>
+                            <p>
+                                Wonderful Indian food, authentic and affordable. I was told you would never find a good indian restaurant in Venice. WRONG! Chicken tikka masala is a must.
+                            </p>
+                        </td>
+
+                        <td class="review-item item2">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div><hr><br/>
+                            <p>
+                                Absolutely Love this restaurant and the staff. We are so pleased to have an Indian Cuisine option in Venice. The menu has many great options, Its hard to choose. We have never had a bad meal or experience, always fresh and full of flavor. Restaurant and staff always clean and Tidy as well. 
+                            </p>
+                        </td>
+                        <td class="review-item item3">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div><hr><br/>
+                            <p>
+                                Very vegan friendly, great prices, attentive staff. Delicious food and lovely modern clean atmosphere. Highly recommend!
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="customer-review" id="rate-us-form">
+                    <form id="rate-form-elements">
+                        <input class="name-input" type="text" placeholder="Your Name"><br/>
+                        <textarea class="review-desc" placeholder="Your expereince"></textarea><br/>
+                        <select class="star-select">
+                            <option>Star Ratings</option>
+                            <option>5 Stars</option>
+                            <option>4 Stars</option>
+                            <option>3 Stars</option>
+                            <option>2 Stars</option>
+                            <option>1 Star</option>
+                        </select><br/>
+                        <button class="review-btn" id="rate-us-btn">Rate Us!</button><br/>
+                    </form>
+                </div>
+                <div class="rating" id="rating-btn">
+                    <i class="fas fa-star fa-3x rate-star"></i>
+                </div>
+            </div><!--reviews-->
+            
+        
+            <div class="parallax" id="para-cater">
+                <h2>Catering</h2>
+                <p class="info" id="inform">
+                    Spice up your next party or corporate gathering with fresh, 
+                    made-to- order Indian cuisine! We are ready with the most exquites dishes for any occasion. 
+                    <br/>Learn more about Tikka Indian Cuisine® 
+                    catering <em><a class="info-link" href="#">here</a></em>!
+                </p>
+            </div><!--catering-->
+
+            <div class="reservation">
+                    <h2>Make a Reservation</h2>
+                    <p>
+                        Book a table online <br/>
+                        <button>Make a Reservation</button><br/>
+                        Or <br/>
+                        Call us at <br/>
+                        941-303-5073 <br/>
+                        To make reservations
+                    </p>
+            </div><!--reservation-->
+            <div class="covid-stand" id="covid">
+                <h2>Our Stand against COVID</h2>
+                
+                <div class="covid-sections">
+                    <a href="#"><i class="fas fa-shield-virus fa-7x" ></i> <p>COVID</p></a>
+                    <a href="#"><i class="fas fa-hand-sparkles fa-7x" ></i><p>Wash Hands</p></a>
+                    <a href="#"><i class="fas fa-head-side-mask fa-7x" ></i><p>Masks</p></a>
+                    <a href="#"><i class="fas fa-handshake-slash fa-7x" ></i><p>Contact-less</p></a>
+                    <a href="#"><i class="fas fa-pump-medical fa-7x"></i><p>Sanitized</p></a>
+                </div>
+            </div><!--covid-stand-->
+           <br/>
+            <div class="virtual-tour">
+                <h2>Get a virtual tour here!</h2><br/>
+                <iframe id="/tours/0GGLlQsZJD" allow="vr;accelerometer;gyroscope;fullscreen" allowfullscreen src="https://app.cloudpano.com/tours/0GGLlQsZJD"></iframe>
+            </div><!--virtual-tour-->
+
+
+            <div class="information" id="info">
+                <div class="logo">
+                    <img src="assets/images/LOGO.png" width="150" alt="Tikka Indian Cuisine Logo">
+                </div>
+                <div class="delivery-hr">
+                    <h3>Take Outs </h3>
+                    <div class="hr">
+                        <hr class="seperator left">
+                        <hr class="seperator right">  <br/>                  
+                    </div>
+                    <p>
+                        Tue-Sun : 11:00 AM - 8:30 PM<br/>
+                        <i class="fas fa-store-slash"></i>&nbsp; Monday: Closed
+                    </p>
+                </div>
+                <div class="open-hr">
+                    <h3>Dine-in Hours </h3>
+                    <div class="hr">
+                        <hr class="seperator left">
+                        <hr class="seperator right">  <br/>                  
+                    </div>
+                    <p>
+                        Tue-Sun : 11:00 AM - 8:30 PM<br/>
+                        <i class="fas fa-store-slash"></i>&nbsp; Monday: Closed
+                    </p>
+                </div>
+                
+                <div class="contact-details">
+                    <h3>Reach us out here</h3>
+                    <div class="hr">
+                        <hr class="seperator left">
+                        <hr class="seperator right">  <br/>                  
+                    </div>
+                    <p>
+                        <i class="fas fa-phone"></i>&nbsp; 941-303-5073 <br/>
+                        <i class="far fa-envelope"></i>&nbsp; tikkaindiancuisine@gmail.com<br/><br/>
+                    </p>
+                </div>
+                <div class="address-block">
+                    <h3>Address</h3>
+                    <div class="hr">
+                        <hr class="seperator left">
+                        <hr class="seperator right">  <br/>                  
+                    </div>
+                    <p>
+                        ​​525a US Hwy 41 Bypass <br/>
+                        North Venice, FL 34285<br/>
+                    </p>
+                </div>
+                <div class="social">
+                    <h3>Follow us on</h3>
+                    <div class="hr">
+                        <hr class="seperator left">
+                        <hr class="seperator right">  <br/>                  
+                    </div>
+                    <p>
+                        <a href="https://www.facebook.com/tikkaindiancuisine" target="_blank">​​<i class="fab fa-facebook-square fa-3x" style="color:royalblue;"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-3x" id="insta"></i></a>
+                        <a href="https://www.google.com/maps/uv?pb=!1s0x88c35b8580e653f9%3A0x415a1e77e3e7a562!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMm6TOOzjOfHCgsPQrvECrQYlajo-m5UsAmdj_k%3Dw568-h320-k-no!5stikka%20indian%20cuisine%20restaurant%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipMm6TOOzjOfHCgsPQrvECrQYlajo-m5UsAmdj_k&hl=en&sa=X&ved=2ahUKEwiYoP2UgKDtAhWG1VkKHS5_D74QoiowFHoECCYQAw" target="_blank">
+                            <i class="fab fa-google-plus-g fa-3x" id="google"></i>
+                        </a>
+                    </p>
+                </div><!--social-->
+            </div><!--information-->
+            
+            <div class="contact-form" id="cnt-form">
+                <form id="contact-form-elements">
+                <div class="bg-form">
+                    <input type="text" placeholder="Your Name" required/>
+                    <input type="Email" placeholder="example@email.com" required/>
+                    <input type="text" placeholder="Cell phone number" required/>
+                    <textarea placeholder="Your Inquiry"></textarea>
+                    <button id="send-btn">Send</button>
+                </div>
+                </form>
+            </div><!--contact-form-->
+
+        </div><!--content-wrapper-->
+        <div class="buttons">
+            <div class="contact-button">
+                <a id="contact-btn"><i class="far fa-comment-alt fa-2x"></i></a>
+            </div><!---contact-button-->
+
+            <div class="top-icon">
+                <a href="#top"><i class="fas fa-arrow-circle-up fa-3x"></i></a>
+            </div><!--top button-->
+        </div>
+   </div><!--container-->
+
+   <footer class="footer">
+    &#169;2020 Original Flavours straight from India
+   </footer><!--footer-->
+   <div class="references">
+       <p>
+        No plagarism is intended. All text and pictures are cited. <a href="reference.html" target="_blank"><i>Reference Page</i></a>
+       </p>
+   </div>
+   
+   <script src="./assets/javascript/main.js"></script>
+   <script src="./assets/javascript/tab.js"></script>
+</body>
+</html>
