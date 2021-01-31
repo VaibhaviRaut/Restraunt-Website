@@ -1,0 +1,52 @@
+.tabs-container{
+    width: 75%;
+    margin: auto;
+    padding-bottom: 20px;
+    z-index: 3;
+    display: none;
+}
+
+.tabHeader{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 6px 12px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.tabHeader:hover{
+    background: radial-gradient(circle at 30% 107%,violet 10%, orange 20%,#ff3e3e 90%,pink 7%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.active-tab{
+    border: 1px solid white !important;
+    background: radial-gradient(circle at 30% 107%,violet 10%, orange 20%,#ff3e3e 90%,pink 7%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tabSection{
+    border: 1px solid white;
+    padding: 15px;
+    margin: auto;
+}
+
+.hide-tab{
+    display: none;
+}
+
+.show-tab{
+    display: block;
+}
+.more-link{
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    background-color: #660000;
+    border-radius: 15px;
+}
+.more-link:hover{
+    color:palevioletred;
+}

@@ -1,0 +1,798 @@
+/* globals */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    background-color: black;
+    height: 100%;
+}
+
+/* MENU */
+.nav-wrapper{
+    position: fixed;
+    width: 100%;
+    z-index: 7;
+}
+.header{
+    padding: 10px;
+    background-color: #660000;
+    transition: all 0.5s;
+    box-shadow: 0 -2px 12px black;
+}
+.nav-wrapper .header ul li{
+    list-style-type: none;
+}
+.header ul{
+    display: flex;
+    justify-content: space-around;
+}
+.header ul li a{
+    position: relative;
+    display: block;
+    padding: 10px 30px;
+    color: white;
+    font-family: 'Cookie', cursive;
+    font-size: x-large;
+    text-decoration: none;
+}
+.header ul li a::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: chocolate;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+.header ul li a::after{
+    bottom: 0;
+    transform-origin: left;
+}
+.header ul li a:hover::after{
+    transform: scaleX(1);
+}
+.header ul li a:hover{
+    color: black;
+}
+.navbar,.hamburger-menu{
+    display: none;
+}
+
+/* VIDEO PLAYER */
+
+.video-wrapper{
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+  .video-wrapper h1{
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-family: 'Cookie', cursive;
+    font-size: 6rem;
+    padding: 20px;
+    margin: 15px;
+    z-index: 1;
+    border-radius: 10px;
+    opacity: .5;
+    transition: 0.4s ease-in-out;
+}
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 30px;
+}
+.video-container video {
+    max-width: 100%;
+    height: auto;
+    padding: 0 75px;
+    opacity: 0.5;
+    transition: 0.4s ease-in-out;
+  }
+
+/* CONTENT WRAPPER */
+
+.content-wrapper{
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    padding-bottom: 30px;
+}
+  
+/* BANNER */
+.banner{
+    color: white;
+    text-align: justify;
+    padding: 30px 0;
+}
+.banner h2{
+    text-align: center;
+    position: relative;
+    font-size: 3rem;
+    font-family: 'Cookie', cursive;
+    line-height: 70px;   
+}
+.banner p{
+    font-size: 1.2rem;
+    padding-top: 20px;
+    line-height: 1.6; 
+}
+
+/* DISHES */
+
+.dishes{
+    color: white;
+}
+.dishes .parallaxd{
+    box-shadow: 0 -2px 12px #1f1f1f;
+}
+.dishes-header{
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    font-size: 3rem;
+    z-index: 2;
+    position: relative;
+    color: white;
+    background-color: #1f1f1f;
+    opacity: 0.9;
+}
+.dishes .parallaxd{
+    height: 200px;
+    z-index: -2;
+}
+
+.parallaxd .info button{
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    font-size: 2.5rem;
+    z-index: 2;
+    position: relative;
+    padding: 10px 50px;
+    background-color: #660000;
+    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 -2px 12px black;
+    transition: 0.3s ease-in-out;
+}
+.parallaxd .info button:hover{
+    background-color:  rgb(148, 0, 0);
+    border: 1px solid ghostwhite;
+}
+.parallaxd .info button:active{
+    background-color:  green;   
+}
+img .menu-img{
+    width: 680px;
+}
+
+#menu .tabs-container .tabSection{
+   
+}
+#menu .tabs-container .tabSection p{
+    padding: 8px;
+}
+.menu-price{
+    float: right;
+}
+.fa-drumstick-bite{
+    color: darkorange;
+}
+.fa-pagelines{
+    color: green;
+}
+.fa-fish{
+    color: aliceblue;
+}
+.fa-pepper-hot{
+    color: darkred;
+}
+#tabsection-7 p button{
+    color: white;
+    background-color: #660000;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 -2px 12px black;
+    transition: 0.3s ease-in-out;
+}
+
+#tabsection-7 p button:hover{
+    background-color:  maroon;
+    border: 1px solid ghostwhite;
+}
+#tabsection-7 p button:active{
+    background-color:  green;   
+}
+
+/* REVIEWS */
+
+.review-list{
+    display: grid;
+    position: relative;
+    top: 0;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    grid-template-rows:auto auto auto ;
+    justify-content: center;
+    align-content: space-around;
+    width: 100%; 
+    margin: 90px auto;
+    min-height: 100%;
+    z-index: 4;
+}
+.review-list h2{
+    position: relative;
+    font-size: 3rem;
+    font-family: 'Cookie', cursive;
+    transition: 0.3s ease-in-out;
+}
+.review-list::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(https://source.unsplash.com/BgvvOFEcHjg/1600x900); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.review-list > div, .actual-table { 
+    margin: 0 0 50px 0; 
+    max-width: 1200px; 
+    width: 100%;
+}
+ .actual-table{
+    margin: auto;
+    width: 80%;
+    border-spacing: 35px;
+ }
+
+.actual-table td { 
+    border-spacing: 15px;
+    box-shadow: 0 0px 12px black;
+    background-color: white;
+    vertical-align: top;
+    width: 20%;
+    padding: 10px 20px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+.actual-table td p{
+    color: black;
+    line-height: 1.2;  
+    font-size: 1.2rem;
+    z-index: 4;
+} 
+.stars{
+    padding: 10px;
+    background : -webkit-linear-gradient(rgb(255, 217, 0),orange,darkorange, firebrick);
+    -webkit-background-clip : text;
+    -webkit-text-fill-color : transparent;
+    
+}
+
+/* YOUR REVIEW */
+
+.rating{
+    display: inline;
+    
+    
+}
+.rate-star{
+    padding: 6px;
+    background : -webkit-linear-gradient(orange, darkorange,firebrick, maroon);
+    -webkit-background-clip : text;
+    -webkit-text-fill-color : transparent;
+}
+.rating i:hover{
+    transition: all 1s ease-in-out;
+    transform: rotate(180deg);
+    
+}
+
+.review{
+    padding: 1px;
+    background-color: red;
+    width: 50%;
+    border: none;
+    margin-left: 40px;
+}
+
+.customer-review{
+    display: none;
+    justify-content: space-around;
+    padding: 10px;
+}
+.customer-review .name-input, .customer-review .star-select,
+.customer-review .review-desc,
+.customer-review .review-btn{
+    margin-top: 20px;
+    z-index: 6;
+    width: 35%;
+}
+.customer-review textarea{
+    padding-top:20px; 
+    height: 20px;
+}
+.customer-review .name-input,
+.customer-review .review-desc,
+.customer-review .star-select{
+    padding-top:15px;
+    font-size: 1em;
+    font-family: 'Courier Prime', monospace;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+.customer-review .name-input:active,
+.customer-review .review-desc:active{
+    border: 0;
+}
+.customer-review .name-input::placeholder,
+.customer-review .review-desc::placeholder{
+    color: white;
+}
+.customer-review .star-select{
+    color: white;
+    
+}
+.customer-review .name-input:hover,
+.customer-review .review-desc:hover,
+.customer-review .star-select:hover{
+    border-bottom: 3px solid #660000;
+    background: radial-gradient(circle at 30% 107%,violet 10%, red 16%, orange 20%,#ff3e3e 90%,pink 7%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.2em;
+}
+.customer-review .review-btn{
+    color: white;
+    background-color: #660000;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Cookie', cursive;
+    font-size: 1.8rem;
+    box-shadow: 0 0 10px black;
+}
+.customer-review .review-btn:hover{
+    background-color: maroon;
+    border: 1px solid white;
+}
+.customer-review .review-btn:active{
+    background-color: green;
+}
+
+
+/* CATERING */
+.parallax{
+    padding-bottom: 40px;
+    background: transparent;
+    color: white;
+}
+.parallax h2{
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    font-size: 3rem;
+    z-index: 2;
+    position: relative;
+}
+.info{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0 400px;
+    z-index: 2;
+    position: relative;
+    line-height: 1.6;  
+}
+.info-link{
+    text-decoration: none;
+    color: yellow;   
+}
+.info-link:hover{
+    color: lightblue;
+    border-bottom: 1px solid lightblue;
+}
+
+/* MAKE A RESERVATION */
+.reservation{
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0.9;
+}
+.reservation h2{
+    position: relative;
+    font-size: 3rem;
+    font-family: 'Cookie', cursive;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+.reservation p{
+    position: relative;
+    font-size: 1.9rem;
+    font-family: 'Cookie', cursive;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    line-height: 50px;
+}
+.reservation::before{
+    content: '';
+    position: absolute;
+    background-image: url(https://source.unsplash.com/boaDpmC-_Xo);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.24;
+}
+.reservation p button{
+    color: white;
+    background-color:  #660000;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 15%;
+    box-shadow: 0 -2px 12px black;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.reservation p button:hover{
+    background-color:  maroon;
+    border: 1px solid ghostwhite;
+}
+.reservation p button:active{
+    background-color:  green;   
+}
+
+
+/* COVID */
+.covid-stand{
+    margin: 40px;
+    padding: 40px;
+    color: white;
+}
+.covid-stand .covid-sections{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 4px solid #660000;
+    border-radius: 10px;
+    padding: 30px 0;
+}
+.covid-stand h2{
+    padding-bottom: 15px;
+    text-align: center;
+    position: relative;
+    font-size: 2.8rem;
+    font-family: 'Cookie', cursive;
+}
+.covid-stand i{
+    color: white;
+}
+.covid-stand a{
+    padding: 5px;
+    text-decoration: none;
+}
+.covid-stand a p{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+}
+.covid-stand a p:hover{
+    color: maroon;
+}
+.covid-stand i:hover{
+    background: -webkit-linear-gradient(greenyellow,rgb(1, 255, 1), green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.lineC{
+    margin: auto;
+    width: 50%;
+    height:3px;
+    border-width:0;
+    background-color:rgb(172, 5, 5);
+}
+
+/* VIRTUAL TOUR */
+.virtual-tour h2{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Cookie', cursive;
+    padding: 10px;
+}
+.virtual-tour iframe{
+    width:100%;
+    height: 500px;
+    border: none;
+    box-shadow: 0px -2px 9px #1f1f1f;
+}
+
+
+/* INFORMATION */
+.information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:20px;
+}
+.logo img{
+    border-radius: 20%;
+}
+.seperator {
+    width: 40%;
+    display: inline-block;
+  }
+
+  .left {
+    float: left;
+    height:3px;
+    border-width:0;
+    background-color:rgb(172, 5, 5);
+  }
+  .right {
+  float: left;
+  height:3px;
+  border-width:0;
+  background-color:white;
+  }
+.open-hr{
+    color: white;
+    padding: 20px;
+}
+.open-hr h3{
+    font-family: 'Cookie', cursive;
+    font-size: 1.7rem;
+}
+.open-hr p{
+    line-height: 1.6;
+}
+.delivery-hr{
+    color: white;
+    padding: 20px;
+}
+.delivery-hr h3{
+    font-family: 'Cookie', cursive;
+    font-size: 1.7rem;
+}
+.delivery-hr p{
+    line-height: 1.6;
+}
+.contact-details{
+    color: white;
+    padding:18px;
+    padding-left: 10px;
+}
+.contact-details h3{
+    font-family: 'Cookie', cursive;
+    font-size: 1.7rem;
+}
+.contact-details p{
+    line-height: 1.6;
+}
+.contact-details p .fa-phone{
+    transform: rotateZ(90deg);
+}
+.address-block{
+    color: white;
+    padding:20px;
+}
+.address-block h3{
+    font-family: 'Cookie', cursive;
+    font-size: 1.7rem;
+}
+
+.address-block p{
+    line-height: 1.6;
+}
+.social{
+    color: white;
+    padding:20px;
+    padding-right:40px;
+    display: flex;
+    flex-direction: column;
+}
+.social h3{
+    color: white;
+    font-family: 'Cookie', cursive;
+    font-size: 1.7rem;
+}
+.social p a #insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+
+.social p a #google {
+    background: radial-gradient(circle at 30% 107%, #119142 20%, #fdf497 35%, #fd5949 45%, #ff3e3e 60%, #285AEB 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+/* CONTACT FORM */
+.contact-form{
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 30%;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+.bg-form{
+    background-color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px white;
+}
+
+.contact-form input, 
+.contact-form textarea,
+.conatct-form button{
+    padding: 10px;
+    margin: 10px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    background-color: ghostwhite;
+    padding-top:10px;
+    border:0;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 1.1em;
+    font-family: 'Courier Prime', monospace;
+}
+.contact-form input:hover,
+.contact-form textarea:hover{
+    border-bottom: 3px solid maroon;
+    background: radial-gradient(circle at 30% 107%,green 10%,darkgreen 40%, lightblue 10%,yellow 90%,blue 17%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+.contact-form button{
+    background-color: #660000;
+    color: white;
+    width: 40%;
+    padding: 10px;
+    margin:auto;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Cookie', cursive;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+.contact-form button:hover{
+    background-color: maroon;
+    font-size: 2.2rem;
+    box-shadow: 0 0 10px black;
+    transition: all 0.3s ease-in-out;
+}
+.contact-form button:active{
+    background-color: green;
+}
+
+
+/*  CONTACT BUTTON */
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+.contact-button{
+    
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.contact-button a i{
+    color: white;
+    transition: all .3s ease-in-out;
+    outline: none;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+.fa-comment-alt{
+    padding: 15px;
+    background: linear-gradient(to bottom right, orange, darkorange,firebrick, maroon);
+    transition: all .3s ease-in-out;
+}
+.fa-comment-alt:hover{
+    background: linear-gradient(to bottom right,orange, darkorange,red,firebrick, maroon);
+    transition: all .3s ease-in-out;
+    color: white;
+    border: 5px solid  white;
+    border-radius: 50%;
+    outline: none;
+    padding: 19px;
+    box-shadow: 0 0 10px maroon;
+}
+
+/* SOCIAL MEDIA */
+.fa-facebook-square{
+    color: white;
+}
+
+/* FOOTER */
+.top-icon{
+    outline: none;
+    border: 0;
+}
+.top-icon a i{
+    color: white;
+    transition: all .3s ease-in-out;
+    outline: none;
+    border: 0;
+    border-radius: 50%;
+}
+.fa-arrow-circle-up:hover{
+    background: linear-gradient(to bottom right,gray,dimgray,#1f1f1f,black);
+    transition: all .3s ease-in-out;
+    color:  white;
+    font-size: xx-large;
+    border: 5px solid  white;
+    border-radius: 50%;
+    outline: none;
+    padding: 15px;
+    box-shadow: 0 0 10px maroon;
+}
+.footer{
+    position: relative;
+    background-color: #660000;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.references{
+    color: white;
+    background-color: black;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    text-align: right;
+    font-size: 14px;
+}
+.references a{
+    color:yellow;
+    text-decoration: none;
+}

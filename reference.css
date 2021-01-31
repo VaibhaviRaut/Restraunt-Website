@@ -1,0 +1,121 @@
+
+/*con*/
+.refernces-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+h3{
+    font-family: 'Cookie', cursive;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.card-wrapper{
+    height: 320px;
+    width: 250px;
+}
+/*card*/
+.card{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Cookie', cursive;
+    font-size: 2rem;
+    text-align: center;
+    transform-style: preserve-3d;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.card:hover{
+    transform: rotateY(180deg);
+    
+}
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid white;
+}
+
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: whitesmoke;
+    background-color: #1f1f1f;
+    transform: rotateY(180deg);
+    padding: 5px;
+    border:2px solid gray;
+}
+.back h4{
+    padding: 8px;
+}
+
+.back form button{
+    margin: 10px;
+    padding:10px;
+    justify-content: center;
+    width: 70%;
+    background-color:maroon;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0 0 9px rgba(73, 73, 73, 0.7);
+    outline: none;
+}
+.back form button:hover{
+    background-color: rgb(224, 39, 33);
+    background-image: linear-gradient(to bottom right,maroon,firebrick,brown);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* APA Format Rerences */
+
+.apa-format{
+    margin: auto;
+    width: 100%;
+    padding-left: 20px;
+}
+.apa-format button{
+    margin: 20px;
+    padding:10px;
+    width: 20%;
+    background-color:maroon;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+}
+.apa-format button:hover{
+    background-color: rgb(224, 39, 33);
+    background-image: linear-gradient(to bottom right,maroon,firebrick,brown);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.apa-format ol{
+    margin: auto;
+    width: 80%;
+    line-height: 1.8;
+}
+.apa-format ol li{
+    color: white;
+    margin: 5px;
+    font-size: large;
+}
+.apa-format ol li a{
+    color: white;
+    text-decoration: none;
+}
+.apa-format ol li a:hover{
+    color: yellow;
+}
+.apa-format ol li a:active{
+    color: green;
+}
+#apa-references{
+    display: none;
+}
